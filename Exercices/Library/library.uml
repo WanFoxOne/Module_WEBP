@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="253.0" y="278.0">Adherent</node>
+    <node x="0.0" y="167.0">Bibliotheque</node>
+    <node x="365.25" y="0.0">Personne</node>
+    <node x="235.0" y="551.0">Livre</node>
+    <node x="17.0" y="0.0">Catalogue</node>
+    <node x="0.0" y="551.0">Pret</node>
+    <node x="486.0" y="322.5">Bibliothecaire</node>
+    <node x="436.0" y="551.0">Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Adherent" target="Personne">
+      <point x="0.0" y="-70.0" />
+      <point x="359.5" y="253.0" />
+      <point x="418.0" y="253.0" />
+      <point x="-52.75" y="114.0" />
+    </edge>
+    <edge source="Bibliotheque" target="Catalogue">
+      <point x="52.0" y="-169.5" />
+      <point x="156.0" y="142.0" />
+      <point x="147.5" y="142.0" />
+      <point x="43.5" y="58.5" />
+    </edge>
+    <edge source="Bibliothecaire" target="Personne">
+      <point x="0.0" y="-25.5" />
+      <point x="582.0" y="253.0" />
+      <point x="523.5" y="253.0" />
+      <point x="52.75" y="114.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="339.0" y="360.5" />
+  <SelectedNodes>
+    <node>Catalogue</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
