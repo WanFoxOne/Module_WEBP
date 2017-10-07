@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.InterfaceController">
+  <children>
+    <Pane layoutY="0.0" prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: #232323;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <children>
+        <Text fx:id="appTitle" fill="WHITE" layoutX="14.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bibliothèque">
+          <font>
+            <Font name="Open Sans Bold" size="20.0" />
+          </font>
+        </Text>
+        <Text fill="#bfbfbf" layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion des prêts et des stocks" />
+        <Rectangle arcHeight="0.0" arcWidth="0.0" fill="#ff9533" height="70.0" layoutX="530.0" layoutY="0.0" smooth="true" stroke="BLACK" strokeLineCap="SQUARE" strokeLineJoin="MITER" strokeType="CENTERED" strokeWidth="0.0" width="70.0" />
+        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="540.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="file:////hades/corler1u$/Images/floppy-icon.png" />
+          </image>
+        </ImageView>
+        <Button fx:id="btnSave" layoutX="530.0" layoutY="0.0" minWidth="70.0" mnemonicParsing="false" onAction="#test" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;&#10;" text="" />
+      </children>
+    </Pane>
+    <Accordion layoutX="0.0" layoutY="70.0" prefHeight="330.0">
+      <panes>
+        <TitledPane alignment="CENTER" animated="false" contentDisplay="CENTER" style="&#10;" text="Blibliothèque" fx:id="x1">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Separator layoutX="0.0" layoutY="50.0" prefWidth="200.0" />
+                <TextField alignment="CENTER_RIGHT" layoutX="80.0" layoutY="14.0" prefWidth="115.0" promptText="Nom de la bibliothèque" text="Wait data..." />
+                <Text layoutX="7.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
+              </children>
+            </AnchorPane>
+          </content>
+          <stylesheets>
+            <URL value="file:/C:/Users/corler1u/IDEA/Library/src/css/customTitledPane.css" />
+          </stylesheets>
+        </TitledPane>
+        <TitledPane id="x1" alignment="CENTER" animated="false" contentDisplay="CENTER" style="&#10;" text="Bibliothécaire" fx:id="x2">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TextField alignment="CENTER_RIGHT" layoutX="79.0" layoutY="14.0" prefWidth="114.99990000000253" promptText="Nom du/de la bibliothécaire" text="Wait data..." />
+                <Text layoutX="7.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
+                <TextField alignment="CENTER_RIGHT" layoutX="79.0" layoutY="48.0" prefWidth="115.0" promptText="Prénom du/de la bibliothécaire" text="Wait data..." />
+                <Text layoutX="7.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom" />
+                <TextField alignment="CENTER_RIGHT" layoutX="79.0" layoutY="81.0" prefWidth="115.0" promptText="Date de naissance du/de la bibliothécaire" text="Wait data..." />
+                <Text layoutX="7.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Naissance" />
+                <Separator layoutX="0.0" layoutY="116.0" prefWidth="200.0" />
+              </children>
+            </AnchorPane>
+          </content>
+          <stylesheets>
+            <URL value="@css/customTitledPane.css" />
+          </stylesheets>
+        </TitledPane>
+      </panes>
+    </Accordion>
+  </children>
+</AnchorPane>
